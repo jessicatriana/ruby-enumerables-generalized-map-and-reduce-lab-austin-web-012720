@@ -18,7 +18,7 @@ else
   index = 1 
 end 
   while index < array.length
-    total = yield(array[index])
+    total = yield(total, array[index])
     index +=1
   end
   total
