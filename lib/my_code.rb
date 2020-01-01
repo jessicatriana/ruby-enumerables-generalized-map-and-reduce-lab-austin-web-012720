@@ -9,7 +9,7 @@ end
   new_array
 end
 
-def reduce
+def reduce(array)
   
   
   
