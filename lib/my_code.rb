@@ -2,7 +2,7 @@
 def map(array)
   new_array = []
   index = 0 
-  while index < array.length do 
+  while index < array.length 
     new_array << yield(array[index])
   index += 1
 end
@@ -10,10 +10,15 @@ end
 end
 
 def reduce(array, starting_point=nil)
+  if starting_point
   total = starting_point
   index = 0 
-  while index < array.length do 
-    total += yield(array[index])
+else 
+  total = array[0]
+  index = 1 
+end 
+  while index < array.length
+    total = yield(array[index])
     index +=1
   end
   total
