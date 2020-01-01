@@ -12,5 +12,5 @@ end
 def reduce(array, starting_point=nil)
   total = starting_point
   
-  
+  total
 end
